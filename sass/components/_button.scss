@@ -1,0 +1,251 @@
+// .btn {
+// 	&,
+// 	&:link,
+// 	&:visited {
+// 		text-transform: uppercase;
+// 		text-decoration: none;
+// 		padding: 1.5rem 4rem;
+// 		display: inline-block;
+// 		border-radius: 10rem;
+// 		transition: all .2s;
+// 		position: relative;
+// 		font-size: $default-font-size;
+
+// 		//Change for the <button> element
+// 		border: none;
+// 		cursor: pointer;
+// 	}
+
+// 	&:hover {
+// 		transform: translateY(-3px);
+// 		box-shadow: 0 1rem 2rem rgba($color-black, .2);
+
+// 		&::after {
+// 			transform: scaleX(1.4) scaleY(1.6);
+// 			opacity: 0;
+// 		}
+// 	}
+
+// 	&:active,
+// 	&:focus {
+// 		outline: none;
+// 		transform: translateY(-1px);
+// 		box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+// 	}
+
+// 	&--white {
+// 		background-color: $color-white;
+// 		color: $color-grey-dark;
+
+// 		&::after {
+// 			background-color: $color-white;
+// 		}
+// 	}
+
+// 	&--green {
+// 		background-color: $color-primary;
+// 		color: $color-white;
+
+// 		&::after {
+// 			background-color: $color-primary;
+// 		}
+// 	}
+
+// 	&::after {
+// 		content: "";
+// 		display: inline-block;
+// 		height: 100%;
+// 		width: 100%;
+// 		border-radius: 10rem;
+// 		position: absolute;
+// 		top: 0;
+// 		left: 0;
+// 		z-index: -1;
+// 		transition: all .4s;
+// 	}
+
+// 	&--animated {
+// 		animation: moveInBottom .5s ease-out .75s;
+// 		animation-fill-mode: backwards;
+// 	}
+// }
+
+// .btn-text {
+// 	&:link,
+// 	&:visited {
+// 		font-size: $default-font-size;
+// 		color: $color-primary;
+// 		display: inline-block;
+// 		text-decoration: none;
+// 		border-bottom: 1px solid $color-primary;
+// 		padding: 3px;
+// 		transition: all .2s;
+// 	}
+
+// 	&:hover {
+// 		background-color: $color-primary;
+// 		color: $color-white;
+// 		box-shadow: 0 1rem 2rem rgba($color-black, .15);
+// 		transform: translateY(-2px);
+// 	}
+
+// 	&:active {
+// 		box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+// 		transform: translateY(0);
+// 	}
+// }
+/////////
+//default button
+.wierdbutton a {
+	background: rgba(white, 0);
+	border-bottom: 1px solid;
+	color: white;
+	line-height: 1.4;
+	padding: 1.25em;
+	text-decoration: none;
+
+	&:hover {
+		background: rgba(#000, 1);
+		color: #000;
+	}
+}
+
+.wierdbutton a.btnwierd {
+	color: #fff;
+	cursor: pointer;
+	// display: block;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 45px;
+	margin: 0 0 2em;
+	max-width: 160px;
+	position: relative;
+	text-decoration: none;
+	//text-transform: uppercase;
+	width: 70px;
+
+	@media (min-width: 600px) {
+		margin: 0 1em 2em;
+	}
+
+	&:hover {
+		text-decoration: none;
+		color: #000;
+	}
+}
+.wierdbutton a.butt-wierd1 {
+	background: #000;
+	font-weight: 300;
+	letter-spacing: 1px;
+
+	svg {
+		height: 60px;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+
+	rect {
+		fill: none;
+		stroke: #000;
+		stroke-width: 2;
+		stroke-dasharray: 422, 0;
+		transition: all 0.35s linear;
+	}
+}
+
+.wierdbutton a.butt-wierd1:hover {
+	background: rgba(red, 0);
+	//font-weight: 900;
+	letter-spacing: 1px;
+
+	rect {
+		stroke-width: 6;
+		stroke-dasharray: 15, 310;
+		stroke-dashoffset: 48;
+		transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+	}
+}
+.wierdbutton {
+	position: absolute;
+	top: 50%;
+	left: 68%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: 100%;
+}
+#w2 {
+	position: absolute;
+	top: 42%;
+	left: 68%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: 100%;
+}
+#w3 {
+	position: absolute;
+	top: 50%;
+	left: 72%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: 100%;
+}
+#w4 {
+	position: absolute;
+	top: 50%;
+	left: 72%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: 100%;
+}
+#w5 {
+	position: absolute;
+	top: 55%;
+	left: 72%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: 100%;
+}
+@media only screen and (max-width: 900px) {
+	.wierdbutton {
+		position: absolute;
+		top: 91%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		width: 100%;
+	}
+	#w2 {
+		position: absolute;
+		top: 91%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		width: 100%;
+	}
+	#w3 {
+		position: absolute;
+		top: 91%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		width: 100%;
+	}
+	#w4 {
+		position: absolute;
+		top: 93%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		width: 100%;
+	}
+	#w5 {
+		position: absolute;
+		top: 92%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		width: 100%;
+	}
+}

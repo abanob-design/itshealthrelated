@@ -560,7 +560,7 @@ body {
       .heading-primary--main {
         letter-spacing: 1rem;
         font-family: 5rem;
-        font-size: 39px; } }
+        font-size: 35px; } }
   .heading-primary--sub {
     display: block;
     color: #ffffff;
@@ -680,9 +680,10 @@ body {
   @media (min-width: 600px) {
     .wierdbutton a.btnwierd {
       margin: 0 1em 2em; } }
-  .wierdbutton a.btnwierd:hover {
-    text-decoration: none;
-    color: #000; }
+  @media (hover: hover) {
+    .wierdbutton a.btnwierd:hover {
+      text-decoration: none;
+      color: #000; } }
 
 .wierdbutton a.butt-wierd1 {
   background: #000;
@@ -701,14 +702,15 @@ body {
     stroke-dasharray: 422, 0;
     transition: all 0.35s linear; }
 
-.wierdbutton a.butt-wierd1:hover {
-  background: rgba(255, 0, 0, 0);
-  letter-spacing: 1px; }
-  .wierdbutton a.butt-wierd1:hover rect {
-    stroke-width: 6;
-    stroke-dasharray: 15, 310;
-    stroke-dashoffset: 48;
-    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1); }
+@media (hover: hover) {
+  .wierdbutton a.butt-wierd1:hover {
+    background: rgba(255, 0, 0, 0);
+    letter-spacing: 1px; }
+    .wierdbutton a.butt-wierd1:hover rect {
+      stroke-width: 6;
+      stroke-dasharray: 15, 310;
+      stroke-dashoffset: 48;
+      transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1); } }
 
 .wierdbutton {
   position: absolute;
@@ -753,21 +755,21 @@ body {
 @media only screen and (max-width: 900px) {
   .wierdbutton {
     position: absolute;
-    top: 91%;
+    top: 92.5%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     width: 100%; }
   #w2 {
     position: absolute;
-    top: 91%;
+    top: 92%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     width: 100%; }
   #w3 {
     position: absolute;
-    top: 91%;
+    top: 91.5%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -1278,9 +1280,7 @@ img#Biotox {
     display: inline-block;
     transition: all .2s; }
   .footer__link:hover, .footer__link:active {
-    color: #bbbbbb;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
-    transform: rotate(5deg) scale(1.3); }
+    color: #bbbbbb; }
   .footer__copyright {
     border-top: 1px solid #777;
     padding-top: 2rem;
@@ -1333,16 +1333,16 @@ img#Biotox {
 
 .header {
   height: 100vh;
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.8)), url(../img/jars.jpg);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.8)), url(../img/jars2.jpg);
   background-size: cover;
   background-position: top;
   position: relative; }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header {
-      background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.8)), url(../img/jars.jpg); } }
+      background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.8)), url(../img/jars2.jpg); } }
   @media only screen and (max-width: 37.5em) {
     .header {
-      background-image: linear-gradient(30deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.6)), url(../img/jars.jpg); } }
+      background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.6)), url(../img/jars2.jpg); } }
   .header__logo-box {
     position: absolute;
     top: 0rem;

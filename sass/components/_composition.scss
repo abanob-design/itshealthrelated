@@ -69,13 +69,13 @@ img#Biotox {
 @include respond(tab-port) {
 	img#slimtea {
 		height: 25%;
-		width: 90%;
+		width: 100%;
 		position: inherit;
-		//	transform: translate(-50%, 0%);
+		//	transform: translate(30%, 0%);
 	}
 	img#okinawa {
 		height: 25%;
-		width: 90%;
+		width: 100%;
 		position: inherit;
 		//		transform: translate(-50%, 0%);
 	}

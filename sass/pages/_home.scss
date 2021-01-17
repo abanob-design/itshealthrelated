@@ -10,15 +10,34 @@
 	}
 }
 .divider {
-	border-bottom: 3px solid black;
-	width: 70%;
+	border-bottom: 2px solid black;
+	width: 90%;
 	display: block;
 	margin: auto;
 	z-index: 200;
 }
+.divider2 {
+	border-bottom: 2px solid black;
+	width: 15%;
+	display: block;
+	margin: auto;
+	z-index: 200;
+}
+#mid {
+	height: 90vh;
+}
 @include respond(tab-port) {
 	.divider {
-		margin: 135px auto 80px auto;
+		// margin: 135px auto 80px auto;
+	}
+	#rowsec {
+		text-align: center;
+	}
+	.midsec {
+		height: 100vh;
+	}
+	#mid {
+		height: 220vh;
 	}
 }
 

@@ -124,7 +124,7 @@
 	// box-shadow: 0 1rem 2rem rgba(#000, .15);
 	// transform: translateY(-2px);
 	//text-transform: uppercase;
-	width: 70px;
+	width: 90px;
 
 	@media (min-width: 600px) {
 		margin: 0 1em 2em;
@@ -173,80 +173,63 @@
 		}
 	}
 }
-.wierdbutton {
-	position: absolute;
-	top: 48%;
-	left: 70%;
-	transform: translate(-50%, -50%);
-	text-align: center;
-	width: 100%;
-}
+
 #w2 {
-	position: absolute;
-	top: 42%;
-	left: 73%;
-	transform: translate(-50%, -50%);
+	//transform: translate(-50%, -50%);
 	text-align: center;
 	width: 100%;
 }
-#w3 {
-	position: absolute;
-	top: 50%;
-	left: 72%;
-	transform: translate(-50%, -50%);
-	text-align: center;
-	width: 100%;
+#MyBtn {
+	font-size: 30px;
+	color: white;
+	display: inline-block;
+	text-decoration: none;
+	background-color: #ad1313;
+	padding: 1% 7%;
+	margin: 4%;
 }
-#w4 {
+#orderNow {
+	font-size: 30px;
+	color: white;
+	display: inline-block;
+	text-decoration: none;
+	background-color: #b39f9f;
+	padding: .8% 1.5%;
+	margin: 4%;
 	position: absolute;
-	top: 44%;
-	left: 71.5%;
-	transform: translate(-50%, -50%);
-	text-align: center;
-	width: 100%;
+	top: 5%;
+	left: 75%;
+	@include respond(phone) {
+		//padding: 1.2% 18.5%;
+		margin: 4%;
+		top: 82%;
+		left: 25%;
+	}
 }
-#w5 {
-	position: absolute;
-	top: 55%;
-	left: 72%;
-	transform: translate(-50%, -50%);
-	text-align: center;
-	width: 100%;
+.ordernow {
+	font-size: 30px;
+	color: white;
+	display: inline-block;
+	text-decoration: none;
+	background-color: #ad1313;
+
+	margin: 4%;
+	padding: .5% 33%;
+	@include respond(phone) {
+		padding: .4% 3%;
+	}
 }
+.order {
+	text-align: center;
+}
+
 @media only screen and (max-width: 900px) {
-	.wierdbutton {
-		position: absolute;
-		top: 92.5%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		text-align: center;
-		width: 100%;
+	#MyBtn {
+		padding: 3% 8%;
+		margin: 2%;
+		font-size: 20px;
 	}
 	#w2 {
-		position: absolute;
-		top: 92%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		text-align: center;
-		width: 100%;
-	}
-	#w3 {
-		position: absolute;
-		top: 91.5%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		text-align: center;
-		width: 100%;
-	}
-	#w4 {
-		position: absolute;
-		top: 93%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		text-align: center;
-		width: 100%;
-	}
-	#w5 {
 		position: absolute;
 		top: 92%;
 		left: 50%;

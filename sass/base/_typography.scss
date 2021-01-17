@@ -33,10 +33,11 @@ body {
 		animation-timing-function: ease-out;
 
 		@include respond(phone) {
-			letter-spacing: 1rem;
+			letter-spacing: 0.5rem;
 			font-family: 5rem;
-			font-size: 35px;
+			font-size: 30px;
 		}
+
 		/*
         animation-delay: 3s;
         animation-iteration-count: 3;
@@ -50,7 +51,7 @@ body {
 		font-weight: 300;
 		text-transform: uppercase;
 		font-style: uppercase;
-		font-size: 18px;
+		font-size: 20px;
 		letter-spacing: 1px;
 		animation: moveInRight 1s ease-out;
 
@@ -58,16 +59,20 @@ body {
 			letter-spacing: .5rem;
 		}
 	}
+	&--trvial {
+		color: red;
+		font-size: 18px;
+	}
 }
 
 .heading-secondary {
-	font-size: 3.5rem;
+	font-size: 2rem;
 	text-transform: uppercase;
 	font-family: Poppins, sans-serif;
 	//font-weight: Bold 700;
 	display: inline-block;
 	//background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
-	color: black;
+	color: white;
 	-webkit-background-clip: text;
 	//color: transparent;
 	letter-spacing: .2rem;
@@ -78,15 +83,15 @@ body {
 	}
 
 	@include respond(phone) {
-		font-size: 5rem;
+		font-size: 3rem;
 		text-transform: none;
 		letter-spacing: 0rem;
 	}
 
-	&:hover {
-		transform: skewY(2deg) skewX(15deg) scale(1.1);
-		text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
-	}
+	// &:hover {
+	// 	transform: skewY(2deg) skewX(15deg) scale(1.1);
+	// 	text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+	// }
 }
 
 .heading-tertiary {
@@ -99,19 +104,83 @@ body {
 	display: block;
 
 	text-rendering: optimizeLegibility;
-	font-size: 24px;
+	font-size: 30px;
+	text-align: left;
+	@include respond(phone) {
+		text-align: center;
+	}
 }
 
 .paragraph {
 	font-family: Roboto, sans-serif;
 	font-weight: 400;
 	font-style: normal;
-	font-size: 14px;
+	font-size: 20px;
 	text-transform: none;
 	color: #333333;
-	line-height: 1.6em;
+	text-align: left;
+	//line-height: 1.6em;
 
 	&:not(:last-child) {
 		margin-bottom: 3rem;
 	}
+	@include respond(phone) {
+		text-align: center;
+	}
+}
+
+.myheading {
+	text-align: center;
+}
+
+.heading-small {
+	font-family: Oswald, sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	//text-transform: uppercase;
+	line-height: 1.5;
+	color: #ad1313;
+	display: block;
+
+	text-rendering: optimizeLegibility;
+	font-size: 35px;
+	text-rendering: optimizeLegibility;
+	font-size: 25px;
+	@include respond(phone) {
+		text-align: center;
+	}
+}
+#subhead {
+	font-family: Oswald, sans-serif;
+	font-weight: 300;
+	letter-spacing: .8rem;
+	font-style: normal;
+	//text-transform: uppercase;
+	line-height: 1.5;
+	color: #ad1313;
+	display: block;
+
+	text-rendering: optimizeLegibility;
+	font-size: 20px;
+}
+
+#con {
+	height: 40vh;
+	width: 100vw;
+	text-align: center;
+	padding: 2%;
+}
+.heading-text {
+	font-family: Oswald, sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	//text-transform: uppercase;
+	line-height: 1.5;
+	color: #000;
+	display: block;
+
+	text-rendering: optimizeLegibility;
+	font-size: 35px;
+}
+@include respond(phone) {
 }

@@ -716,7 +716,7 @@ img#before {
 		margin-top: 25%;
 	}
 	#round {
-		transform: translate(50%, 0%);
+		transform: translate(65%, 0%);
 	}
 	#facts {
 		width: 100%;
@@ -745,12 +745,6 @@ img#before {
 		width: 120%;
 		height: 125%;
 		margin-left: -10%;
-	}
-}
-
-@media (min-resolution: 3dppx) {
-	#round {
-		transform: translate(65%, 0%);
 	}
 }
 

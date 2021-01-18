@@ -74,7 +74,7 @@ img#before {
 		margin-top: 25%;
 	}
 	#round {
-		transform: translate(55%, 0%);
+		transform: translate(65%, 0%);
 	}
 	#facts {
 		width: 100%;
@@ -107,11 +107,11 @@ img#before {
 	}
 }
 
-@media (min-resolution: 3dppx) {
-	#round {
-		transform: translate(65%, 0%);
-	}
-}
+// @media (min-resolution: 3dppx) {
+// 	#round {
+// 		transform: translate(65%, 0%);
+// 	}
+// }
 .midsec {
 	position: relative;
 	padding: 2% 5%;

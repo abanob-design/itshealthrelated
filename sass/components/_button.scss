@@ -136,43 +136,6 @@
 		}
 	}
 }
-.wierdbutton a.butt-wierd1 {
-	background: #000;
-	font-weight: 300;
-	letter-spacing: 1px;
-	//text-decoration: none;
-
-	svg {
-		height: 60px;
-		left: 0;
-		position: absolute;
-		top: 0;
-		width: 100%;
-	}
-
-	rect {
-		fill: none;
-		stroke: #000;
-		stroke-width: 2;
-		stroke-dasharray: 422, 0;
-		transition: all 0.35s linear;
-	}
-}
-
-@media (hover: hover) {
-	.wierdbutton a.butt-wierd1:hover {
-		background: rgba(red, 0);
-		//font-weight: 900;
-		letter-spacing: 1px;
-
-		rect {
-			stroke-width: 6;
-			stroke-dasharray: 15, 310;
-			stroke-dashoffset: 48;
-			transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
-		}
-	}
-}
 
 #w2 {
 	//transform: translate(-50%, -50%);
@@ -187,6 +150,48 @@
 	background-color: #ad1313;
 	padding: 1% 7%;
 	margin: 4%;
+	animation: shake 0.9s cubic-bezier(.36, .07, .19, .97) both infinite;
+	transform: translate3d(0, 0, 0);
+	backface-visibility: hidden;
+	perspective: 1000px;
+}
+@keyframes shake {
+	10%,
+	90% {
+		transform: rotate(-4deg);
+	}
+	20%,
+	80% {
+		transform: rotate(8deg);
+	}
+	30%,
+	50%,
+	70% {
+		transform: rotate(-10deg);
+	}
+	40%,
+	60% {
+		transform: rotate(12deg);
+	}
+}
+@keyframes shakey {
+	10%,
+	90% {
+		transform: translate3d(-1px, 0, 0);
+	}
+	20%,
+	80% {
+		transform: translate3d(2px, 0, 0);
+	}
+	30%,
+	50%,
+	70% {
+		transform: translate3d(-4px, 0, 0);
+	}
+	40%,
+	60% {
+		transform: translate3d(4px, 0, 0);
+	}
 }
 #orderNow {
 	font-size: 30px;
@@ -199,6 +204,10 @@
 	position: absolute;
 	top: 5%;
 	left: 75%;
+	animation: shake 0.9s cubic-bezier(.36, .07, .19, .97) both infinite;
+	transform: translate3d(0, 0, 0);
+	backface-visibility: hidden;
+	perspective: 1000px;
 	@include respond(phone) {
 		//padding: 1.2% 18.5%;
 		margin: 4%;
@@ -212,9 +221,14 @@
 	display: inline-block;
 	text-decoration: none;
 	background-color: #ad1313;
+	animation: shakey 0.9s cubic-bezier(.36, .07, .19, .97) both infinite;
+	transform: translate3d(0, 0, 0);
+	backface-visibility: hidden;
+	perspective: 1000px;
 
 	margin: 4%;
 	padding: .5% 33%;
+
 	@include respond(phone) {
 		padding: .4% 3%;
 	}

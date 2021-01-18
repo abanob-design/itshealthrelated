@@ -68,14 +68,14 @@ img#before {
 	left: 70%;
 }
 
-@include respond(tab-port) {
+@include respond(phone) {
 	.couple {
 		//background-image: url(../img/couple.png);
 		position: inherit;
 		margin-top: 25%;
 	}
 	#round {
-		transform: translate(40%, 0%);
+		transform: translate(70%, 0%);
 	}
 	#facts {
 		width: 100%;

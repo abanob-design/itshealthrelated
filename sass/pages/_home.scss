@@ -26,7 +26,7 @@
 #mid {
 	height: 90vh;
 }
-@include respond(tab-port) {
+@include respond(phone) {
 	.divider {
 		// margin: 135px auto 80px auto;
 	}
@@ -37,7 +37,7 @@
 		height: 100vh;
 	}
 	#mid {
-		height: 220vh;
+		height: 240vh;
 	}
 }
 

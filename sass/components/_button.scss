@@ -221,10 +221,10 @@
 	display: inline-block;
 	text-decoration: none;
 	background-color: #ad1313;
-	animation: shakey 0.9s cubic-bezier(.36, .07, .19, .97) both infinite;
-	transform: translate3d(0, 0, 0);
-	backface-visibility: hidden;
-	perspective: 1000px;
+	//animation: shakey 0.9s cubic-bezier(.36, .07, .19, .97) both infinite;
+	// transform: translate3d(0, 0, 0);
+	// backface-visibility: hidden;
+	// perspective: 1000px;
 
 	margin: 4%;
 	padding: .5% 33%;
